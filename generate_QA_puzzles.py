@@ -20,7 +20,7 @@ def fen_to_question(fen, show_board, show_moves):
     if show_moves:
         question += f"The list of legal moves in the Universal Chess Interface (UCI) format is: {', '.join([chess.Move.uci(move) for move in board.legal_moves])}.\n\n"
 
-    question += "Answer with exactly one word, the best move for the side to move, in UCI format.\n"
+    question += "Answer with exactly one word. Which is the best move for the side to move, in UCI format?\n"
 
     return question
 
