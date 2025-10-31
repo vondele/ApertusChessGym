@@ -2,7 +2,7 @@
 
 generate questions, somewhat configurable, and answers to train LLMs to play chess.
 
-## Example Q&A
+## Example Q&A Puzzles
 
 ```
 Question:
@@ -29,5 +29,37 @@ Answer with exactly one word, the best move for the side to move, in UCI format.
 
 Answer:
  e4d3
+
+```
+
+## Example Q&A PV
+
+```
+Question:
+ Given a chess position in Forsyth–Edwards Notation (FEN) notation:
+
+r1bqkbnr/pp1ppppp/2n5/2p5/8/2N2N2/PPPPPPPP/R1BQKB1R w KQkq -
+
+Representing the board:
+
+r . b q k b n r
+p p . p p p p p
+. . n . . . . .
+. . p . . . . .
+. . . . . . . .
+. . N . . N . .
+P P P P P P P P
+R . B Q K B . R
+
+with white to move.
+
+For this position, the Principal Variation (PV) is given by the following moves in Universal Chess Interface (UCI) format. However one move has been masked (_____).
+
+e2e4 g7g6 f1b5 f8g7 _____ d7d6 e1g1 c8d7 h2h3 a7a6 b5c6 d7c6 d3d4 c5d4 f3d4 g8f6 d4c6 b7c6 a1b1 f6d7 c1e3 e8g8 c3a4
+
+Answer with exactly one word. Which is the move, in UCI format, that is masked in the above PV?
+
+Answer:
+ d2d3
 
 ```
